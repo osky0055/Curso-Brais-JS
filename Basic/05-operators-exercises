@@ -1,0 +1,94 @@
+/* 
+1 - Cree una variable con cada opereracion aritmetica
+2 - Crear una variable para cada tipo de operación de asignación, que haga una 
+    de las variables utilizadas para las operaciones aritméticas
+3 - Imprime 5 comparaciones variables con diferentes operaciones de comparación
+4 - Imprime 5 comparaciones falsas con diferentes operaores de comparación
+5 - Utiliza el operador lógico and
+6 - Utiliza el operador lógico operaciones
+7 - Combina ambos operadores lógicos
+8 - Añade alguna negación
+9 - Uliza el operador ternario
+10 - Combina operadores aritméticos, de comparación y lógicas
+
+*/
+// 1
+
+let asum = 3
+let ares = 5
+let amul = 2
+let adiv = 5
+let amod = 4
+let aexp = 2
+
+// 2
+
+let suma = 5 + asum
+let resta = 10 - ares
+let multiplicacion = 2 * amul
+let division = 25 / adiv
+let modulo = 21 % amod
+let exponente = 2 ** aexp
+
+
+    console.log("SUMA:", suma)
+    console.log("RESTA:", resta)
+    console.log("MULTIPLICACIÓN:", multiplicacion)
+    console.log("DIVISIÓN:", division)
+    console.log("MÓDULO:", modulo)
+    console.log("EXPONENTE:", exponente)
+
+// 3
+
+    console.log(suma,">",resta, suma > resta)
+    console.log(resta,"!==",suma * 2, resta !== suma * 2)
+    console.log(multiplicacion,"== 4", multiplicacion == 4)
+    console.log(division,"== 2", division == 2)
+    console.log(modulo,"== 1", modulo == 1)
+    console.log(exponente,"== 4", exponente == 4)
+
+    console.log("Comparaciones falsas")
+    console.log(suma,"<",resta, suma < resta)
+    console.log(resta,"==",suma * 2, resta == suma * 2)
+    console.log(multiplicacion,"!== 4", multiplicacion !== 4)
+    console.log(division,"!== 5", division !== 5)
+    console.log(modulo,"!== 1", modulo !== 1)
+    console.log(exponente,"!== 4", exponente !== 4) 
+
+    console.log("Operador lógico AND")
+    console.log(suma," > ",resta ,"&&",multiplicacion," == 4 ", suma> resta && multiplicacion == 4)
+    console.log(resta," !== ",suma * 2,"&&",division, "== 5", resta!== suma * 2 && division == 5)
+    console.log(multiplicacion," ==",multiplicacion == 4 && modulo == 1)
+    console.log(division == 2 && exponente == 4)
+    console.log(modulo == 1 && suma > resta)
+
+    console.log("Operador lógico OR")
+    console.log(suma > resta || multiplicacion == 4)
+    console.log(resta !== suma * 2 || division == 5)
+    console.log(multiplicacion == 4 || modulo == 1)
+    console.log(division == 2 || exponente == 4)
+    console.log(modulo == 1 || suma > resta)
+
+    console.log("Combinación de operadores lógicos")
+    console.log(suma > resta && multiplicacion == 4 || division == 5)
+    console.log(resta !== suma * 2 && division == 5 || modulo == 1)
+    console.log(multiplicacion == 4 && modulo == 1 || exponente == 4)
+    console.log(division == 2 && exponente == 4 || suma > resta)
+    console.log(modulo == 1 && suma > resta || multiplicacion == 4)
+
+    console.log("Negación")
+    console.log(!(suma > resta))
+    console.log(!(resta !== suma * 2))
+    console.log(!(multiplicacion == 4))
+    console.log(!(division == 2))
+    console.log(!(modulo == 1))
+
+    console.log("Operador ternario")
+    let resultado = suma > resta ? "Suma es mayor que Resta" : "Resta es mayor que Suma"
+    console.log(resultado)
+
+
+
+
+
+
