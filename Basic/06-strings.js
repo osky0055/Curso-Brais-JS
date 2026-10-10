@@ -1,4 +1,4 @@
-let myName = "Oscaracitoz"
+let myName = "Oscaracitozz"
 let greeting = "Hola, me llamo " + myName + "! "
 console.log(greeting)
 console.log("Mi nombre tiene " + myName.length + " letras.")
